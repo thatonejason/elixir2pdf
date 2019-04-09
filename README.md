@@ -1,13 +1,13 @@
 # Elixir2pdf
 
-Elixir2pdf is a simple Elixir wrapper for ErlGuten, a Erlang PDF generation application. It is limited to my current needs of ErlGuten's functionality as well as some additional functionality not provided by ErlGuten.
+Elixir2pdf is a simple Elixir wrapper for ErlGuten, a Erlang PDF generation application. It is limited to a subset of ErlGuten's functionality as well as some additional functionality not provided by ErlGuten.
 
 ## Installation
 
 The package can be installed via GitHub:
 
     def deps do
-      [{:elixir2pdf, github: "jsonkenl/elixir2pdf"}]
+      [{:elixir2pdf, github: "thatonejason/elixir2pdf"}]
     end
 
 ## Basic Usage
@@ -22,23 +22,23 @@ Elixir2pdf works by creating a PDF GenServer process and utilizing various funct
 ## Current Exposed Functions: 
 
 **General**
-- [new/1](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L10)
-- [close/1](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L191)
+- [new/1](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L10)
+- [close/1](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L191)
 
 **Document**
-- [set_new_page/1](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L22)
-- [export/2](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L179)
+- [set_new_page/1](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L22)
+- [export/2](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L179)
 
 **Text**
-- [set_font/3](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L38)
-- [text/4](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L55)
-- [right_aligned_text/5](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L74)
-- [center_aligned_text/6](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L100)
+- [set_font/3](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L38)
+- [text/4](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L55)
+- [right_aligned_text/5](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L74)
+- [center_aligned_text/6](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L100)
 
 **Graphics**
-- [draw_line/5](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L131)
-- [draw_rectangle/5](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L150)
-- [insert_image/4](https://github.com/kennellroxco/elixir2pdf/blob/master/lib/elixir2pdf.ex#L167)
+- [draw_line/5](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L131)
+- [draw_rectangle/5](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L150)
+- [insert_image/4](https://github.com/thatonejason/elixir2pdf/blob/master/lib/elixir2pdf.ex#L167)
 
 ## Example:
 
